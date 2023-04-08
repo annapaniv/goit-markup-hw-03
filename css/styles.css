@@ -107,7 +107,11 @@ body {
   width: 1158px;
   margin-left: auto;
   margin-right: auto;
-  outline: solid tomato;
+  padding-left: 15px;
+  padding-right: 15px;
+  
+}
+.page-header{
   border-bottom: 1px solid #e7e9fc;
 }
 .page-header-container {
@@ -121,15 +125,16 @@ body {
 .logo {
   margin-right: 76px;
   margin-left: 15px;
-  margin-top: 24px;
-  margin-bottom: 24px;
+ padding-top: 24px;
+  padding-bottom: 24px;
 }
 .menu {
   display: flex;
   align-items: center;
+  gap: 40px;
 }
-.menu-item:not(:last-child) {
-  margin-right: 40px;
+.menu-item:last-child {
+  margin-right: 0;
 }
 
 .list-contacts-container {
@@ -141,6 +146,10 @@ body {
 /* ==============================TITLE================================ */
 
 /* Title H1 */
+.title-container{
+  padding-top: 188px; 
+  padding-bottom: 188px;
+}
 .section-title {
   font-family: var(--font-primary);
   background-color: var(--color-title-h2-h3-darkbg);
@@ -156,13 +165,10 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--backgraund-color);
-  width: 496px;
-
+  max-width: 496px;
   margin-left: auto;
   margin-right: auto;
-
   margin-bottom: 48px;
-  padding-top: 188px;
 }
 
 /* batton order service */
