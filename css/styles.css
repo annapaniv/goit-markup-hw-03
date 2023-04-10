@@ -44,10 +44,10 @@ body {
   font-family: var(--font-primary);
 }
 .section {
-  padding-top: 120px;
-  padding-bottom: 120px;
   padding-left: 15px;
   padding-right: 15px;
+  padding-top: 120px;  
+  padding-bottom: 120px;
 }
 
 /* ================================HEADER================================= */
@@ -88,6 +88,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--body-text);
+
 }
 .adress {
   font-style: normal;
@@ -107,9 +108,7 @@ body {
   width: 1158px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  
+ 
 }
 .page-header{
   border-bottom: 1px solid #e7e9fc;
@@ -125,20 +124,22 @@ body {
 .logo {
   margin-right: 76px;
   margin-left: 15px;
- padding-top: 24px;
-  padding-bottom: 24px;
 }
 .menu {
   display: flex;
   align-items: center;
   gap: 40px;
 }
-.menu-item:last-child {
+.menu-item:last-child, .list-contacts-container:last-child {
   margin-right: 0;
 }
-
+.menu-item{
+  padding-top: 24px; 
+  padding-bottom: 24px
+}
 .list-contacts-container {
   display: flex;
+  gap: 40px;
 }
 .phone {
   margin-right: 40px;
@@ -189,12 +190,14 @@ body {
   height: 56px;
   margin-left: auto;
   margin-right: auto;
+  border: none;
+  cursor: pointer;
 }
 .modal-button:hover,
 .modal-button:focus {
-  cursor: pointer;
   background: var(--color-hover-focus);
 }
+
 
 /* ===========================SECTION 2========================== */
 .title-section-two {
@@ -203,6 +206,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--color-title-h2-h3-darkbg);
+  margin-bottom: 8px;
 }
 .text-section-two {
   font-size: 16px;
@@ -210,12 +214,19 @@ body {
   letter-spacing: 0.02em;
   color: var(--body-text);
 }
-.advantages-container {
+.advantages-container{
+}
+.advantages-list-container {
   display: flex;
+  gap: 24px;
 }
-.p-container {
-  margin-top: 8px;
+.item-text:not(:last-child){
+  margin-right: 24px;
 }
+.item-text{
+  width: calc((100% - 72px) / 4);
+}
+
 /* ===========================SECTION 3========================== */
 
 .title-section-three {
@@ -226,19 +237,23 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--color-title-h2-h3-darkbg);
+  margin-bottom: 72px;
 }
-.work-container {
+.work-list {
   display: flex;
-  margin-top: 72px;
+  gap: 24px;
+}
+.work-item:not(:last-child){
+  margin-right: 24px;
 }
 .work-item {
-  display: flex;
   width: calc((100%-48px) / 3);
 }
 
 /* ===========================SECTION 4========================== */
 .section-team {
   background-color: var(--color-rest);
+  width: 1158px;
 }
 .title-section-four {
   font-weight: 700;
@@ -249,6 +264,8 @@ body {
   text-transform: capitalize;
   color: var(--color-title-h2-h3-darkbg);
   margin-bottom: 72px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .list-item {
   background-color: var(--backgraund-color);
@@ -260,21 +277,35 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--color-title-h2-h3-darkbg);
-  margin-top: 32px;
+  margin-bottom: 8px;
 }
 .team-role {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--body-text);
-  margin-top: 8px;
   text-align: center;
 }
-.employees {
+.employees-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
   gap: 24px;
 }
+.list-item:not(:nth-child(2n)){
+  margin-right: 24px;
+}
+.list-item{
+  width: calc((100%-72px)/4);
+}
+.employees-name{
+  padding-top: 32px; 
+  padding-bottom: 32px; 
+  padding-left: 16px; 
+  padding-right: 16px;
+  border-radius: 0px 0px 4px 4px;
+}
+
+
 /* ===========================FOOTER========================== */
 .footer {
   background-color: var(--color-title-h2-h3-darkbg);
@@ -291,7 +322,7 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  /* padding-top: 100px; */
+  
 }
 .footer-text {
   display: block;
@@ -299,7 +330,7 @@ body {
   line-height: 1.5x;
   letter-spacing: 0.02em;
   color: var(--color-rest);
-  width: 264px;
+  max-width: 264px;
   text-align: justify;
   margin-left: 156px;
 }
@@ -313,7 +344,7 @@ body {
   text-transform: uppercase;
 }
 .footer-container {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
 }
 .footer-logo {
@@ -335,6 +366,7 @@ body {
   cursor: pointer;
   border: 1px solid var(--border-batton-portfolio);
   border-radius: 4px;
+  padding: 12px 24px;
 }
 .modal-btn:hover,
 .modal-btn:focus,
@@ -344,11 +376,12 @@ body {
 }
 .button-container {
   display: flex;
-  margin-top: 96px;
   margin-left: auto;
   margin-right: auto;
-  width: 586px;
+  min-width: 586px;
   gap: 24px;
+  margin-bottom: 72px;
+  justify-content: center;
 }
 .button-item:not(:last-child) {
   padding-right: 24px;
@@ -356,7 +389,12 @@ body {
 .button-item {
   align-items: center;
 }
-/* section 2 */
+.portfolio{
+  padding-top: 96px; 
+  padding-bottom: 120px;
+}
+
+/* filter */
 .content-item {
   font-weight: 500;
   font-size: 20px;
@@ -373,15 +411,19 @@ body {
   color: var(--body-text);
 }
 .filter-container {
-  width: 1128px;
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 72px;
-  margin-bottom: 120px;
-  gap: 24px;
+}
+.filter-card:not(:nth-child(3n)){
+  margin-right: 24px;
 }
 .filter-card {
   border-bottom: 1px solid #e7e9fc;
+  margin-bottom: 24px;
+  width: calc((100% - 48px) / 3);
+}
+.title-style{
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
