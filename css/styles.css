@@ -44,8 +44,8 @@ body {
   font-family: var(--font-primary);
 }
 .section {
-  padding-left: 15px;
-  padding-right: 15px;
+  /* padding-left: 15px;
+  padding-right: 15px; */
   padding-top: 120px;  
   padding-bottom: 120px;
 }
@@ -108,6 +108,8 @@ body {
   width: 1158px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
  
 }
 .page-header{
@@ -129,13 +131,14 @@ body {
   display: flex;
   align-items: center;
   gap: 40px;
+  padding-top: 24px; 
+  padding-bottom: 24px
 }
 .menu-item:last-child, .list-contacts-container:last-child {
   margin-right: 0;
 }
 .menu-item{
-  padding-top: 24px; 
-  padding-bottom: 24px
+ 
 }
 .list-contacts-container {
   display: flex;
@@ -147,10 +150,10 @@ body {
 /* ==============================TITLE================================ */
 
 /* Title H1 */
-.title-container{
+/* .title-container{
   padding-top: 188px; 
   padding-bottom: 188px;
-}
+} */
 .section-title {
   font-family: var(--font-primary);
   background-color: var(--color-title-h2-h3-darkbg);
@@ -158,6 +161,8 @@ body {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 188px; 
+  padding-bottom: 188px;
 }
 .title-section-one {
   font-weight: 700;
@@ -253,7 +258,9 @@ body {
 /* ===========================SECTION 4========================== */
 .section-team {
   background-color: var(--color-rest);
-  width: 1158px;
+   width: 1158px; 
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .title-section-four {
   font-weight: 700;
@@ -313,6 +320,8 @@ body {
   height: 312px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 100px; 
+  padding-bottom: 100px;
 }
 .footer-item-one {
   font-family: 'Raleway', sans-serif;
@@ -349,7 +358,6 @@ body {
 }
 .footer-logo {
   margin-bottom: 16px;
-  padding-top: 100px;
   padding-left: 156px;
 }
 /* ===========================PORTFOLIO========================== */
