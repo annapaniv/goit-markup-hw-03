@@ -227,8 +227,8 @@ body {
 .item-text:not(:last-child) {
   margin-right: 24px;
 }
-.item-text {
-  width: calc((100%-72px) / 4);
+.item-text{
+  width: calc((100% - 72px) / 4);
 }
 
 /* ===========================SECTION 3========================== */
@@ -250,8 +250,8 @@ body {
 .work-item:not(:last-child) {
   margin-right: 24px;
 }
-.work-item {
-  width: calc((100%-48px)/3);
+.work-item{
+  width: calc((100% - 48px)/3);
 }
 
 /* ===========================SECTION 4========================== */
