@@ -46,7 +46,7 @@ body {
 .section {
   /* padding-left: 15px;
   padding-right: 15px; */
-  padding-top: 120px;  
+  padding-top: 120px;
   padding-bottom: 120px;
 }
 
@@ -88,7 +88,6 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--body-text);
-
 }
 .adress {
   font-style: normal;
@@ -110,11 +109,9 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
- 
 }
-.page-header{
+.page-header {
   border-bottom: 1px solid #e7e9fc;
-
 }
 .page-header-container {
   display: flex;
@@ -135,7 +132,8 @@ body {
   padding-top: 24px;
   padding-bottom: 24px;
 }
-.menu-item:last-child, .list-contacts-container:last-child {
+.menu-item:last-child,
+.list-contacts-container:last-child {
   margin-right: 0;
 }
 
@@ -146,8 +144,9 @@ body {
 .phone {
   margin-right: 40px;
 }
-.menu-link{
-  
+.menu-link {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 /* ==============================TITLE================================ */
 
@@ -163,7 +162,7 @@ body {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 188px; 
+  padding-top: 188px;
   padding-bottom: 188px;
 }
 .title-section-one {
@@ -205,7 +204,6 @@ body {
   background: var(--color-hover-focus);
 }
 
-
 /* ===========================SECTION 2========================== */
 .title-section-two {
   font-weight: 500;
@@ -221,17 +219,16 @@ body {
   letter-spacing: 0.02em;
   color: var(--body-text);
 }
-.advantages-container{
-}
+
 .advantages-list-container {
   display: flex;
   gap: 24px;
 }
-.item-text:not(:last-child){
+.item-text:not(:last-child) {
   margin-right: 24px;
 }
-.list-item:first-child{
-  width: calc((100% - 72px) / 4);
+.item-text {
+  width: calc((100%-72px) / 4);
 }
 
 /* ===========================SECTION 3========================== */
@@ -250,17 +247,17 @@ body {
   display: flex;
   gap: 24px;
 }
-.work-item:not(:last-child){
+.work-item:not(:last-child) {
   margin-right: 24px;
 }
-.work-item:first-child{
-  width: calc((100%-48px) / 3);
+.work-item {
+  width: calc((100%-48px)/3);
 }
 
 /* ===========================SECTION 4========================== */
 .section-team {
   background-color: var(--color-rest);
-   width: 1158px; 
+  width: 1158px;
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -297,24 +294,23 @@ body {
 }
 .employees-list {
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   gap: 24px;
 }
 /* .list-ones:not(:nth-child(2n)){
   margin-right: 24px;
 } */
-.list-ones:first-child{
+.list-ones:first-child {
   width: calc((100% - 72px) / 4);
 }
- 
-.employees-name{
-  padding-top: 32px; 
-  padding-bottom: 32px; 
-  padding-left: 16px; 
+
+.employees-name {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
   padding-right: 16px;
   border-radius: 0px 0px 4px 4px;
 }
-
 
 /* ===========================FOOTER========================== */
 .footer {
@@ -323,7 +319,7 @@ body {
   height: 312px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 100px; 
+  padding-top: 100px;
   padding-bottom: 100px;
 }
 .footer-item-one {
@@ -335,7 +331,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   display: inline-block;
-  margin-bottom: 16px
+  margin-bottom: 16px;
 }
 .footer-text {
   display: block;
@@ -345,7 +341,6 @@ body {
   color: var(--color-rest);
   max-width: 264px;
   text-align: justify;
-
 }
 .footer-item-two {
   font-family: 'Raleway', sans-serif;
@@ -357,7 +352,6 @@ body {
   text-transform: uppercase;
 }
 .footer-container {
- 
   flex-direction: column;
 }
 .footer-logo {
@@ -386,7 +380,7 @@ body {
   color: var(--backgraund-color);
   background-color: var(--color-hover-focus);
   border: 1px solid transparent;
-  border: 1px solid transparent
+  border: 1px solid transparent;
 }
 .button-container {
   display: flex;
@@ -403,8 +397,8 @@ body {
 .button-item {
   align-items: center;
 }
-.portfolio{
-  padding-top: 96px; 
+.portfolio {
+  padding-top: 96px;
   padding-bottom: 120px;
 }
 
@@ -427,9 +421,9 @@ body {
 .filter-container {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 48px; 
+  row-gap: 48px;
 }
-.filter-card:not(:nth-child(3n)){
+.filter-card:not(:nth-child(3n)) {
   margin-right: 24px;
 }
 
@@ -437,9 +431,8 @@ body {
   border-bottom: 1px solid #e7e9fc;
   margin-bottom: 24px;
   width: calc((100% - 48px) / 3);
-  
 }
-.title-style{
+.title-style {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
