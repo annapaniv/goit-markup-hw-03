@@ -224,9 +224,9 @@ body {
   display: flex;
   gap: 24px;
 }
-.item-text:not(:last-child) {
+/* .item-text:not(:last-child) {
   margin-right: 24px;
-}
+} */
 .item-text {
   width: calc(((100% - 72px) / 4));
 }
