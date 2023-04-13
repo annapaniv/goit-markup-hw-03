@@ -152,8 +152,7 @@ body {
 .section-title {
   font-family: var(--font-primary);
   background-color: var(--color-title-h2-h3-darkbg);
-  width: 1440px;
-  height: 600px;
+  max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 188px;
@@ -258,9 +257,7 @@ body {
   padding-bottom: 120px;
 }
 /* ===========================SECTION 4========================== */
-.section-team {
-  background-color: var(--color-rest);
-}
+
 .title-section-four {
   font-weight: 700;
   font-size: 36px;
@@ -300,6 +297,7 @@ body {
 
 .list-ones {
   width: calc((100% - 72px) / 4);
+  background-color: var(--backgraund-color);
 }
 
 .employees-name {
